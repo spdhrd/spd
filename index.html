@@ -9,6 +9,11 @@
     <meta content="東大阪のアジア・エスニック料理、インド料理 ビンドゥ 小阪店のホームページです。お店の基本情報やおすすめ料理の「食べ飲み放題コース【男性3500円　女性3000円】」「Aセット」「タンドリーチキンとチーズナンが半額の５００円♪」をはじめとしたメニュー情報などをご紹介しています。" name="description" /><meta content="インド料理 ビンドゥ 小阪店, 公式ホームページ" name="keywords" /><meta content="美味しいカレー" name="keywords" /><meta content="インド料理　ビンドゥ　小阪店" property="og:title" />
 </head>
 <style>
+  *{
+    background-color: cyan;
+    margin: 0;
+    padding: 0;
+  }
   
   #myBtn {
 display: none;
@@ -140,8 +145,34 @@ to {opacity: 1}
     padding: 0%;
   }
   .mark{
-    font-family: fantasy;
+    background-color:sandybrown;
+        font-family: fantasy;
+        color: white;
   }
+  h2,h3{
+    text-align: center;
+    background-color: cyan;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+  .osusume{
+    text-align: center;
+    background-color: cyan;
+    height: auto;
+    width: 100%;
+  }
+  .san{
+    color: black; 
+  }
+  .dinnermenu img,.lunch img{
+    padding-bottom: 10px;
+  }
+
+  
+  
 
 </style>
 <body>
@@ -178,13 +209,16 @@ to {opacity: 1}
         </script>
         <!--माथि जाने बटमको लागि-->
         <div class="topnav" id="myTopnav">
-          <a href="#home" class="active"><span class="mark"></span> ホーム</a>
-          <a href="#news">コース料理</a>
-          <a href="#zyoho">メニュー</a>
+          <a href="#home" class="active"><span class="mark">ﾋﾞﾝﾃﾞｩ小坂店</span> ホーム</a>
+          <a href="#osusume">おすすめ</a>
+          <a href="#lunch">ランチメニュー</a>
+          <a href="#dinner">ディナーメニュー</a>
+          <a href="#kids">お客様セット</a>
+          <a href="#tanehoudai">食べ放題</a>
           <a href="https://www.hotpepper.jp/strJ000736490/yoyaku/202102111130_rpn2_hpds/">予約</a>
           <a href="#zyoho">お問い合わせ</a>
-          <a href="javascript:void(0);" class="icon" style="background-color: none;" onclick="myFunction()">
-            <i class="""><b>三</b></i>
+          <a href="javascript:void(0);" class="icon" style="background-color: black;" onclick="myFunction()">
+            <i class="san"><b>三</b></i>
           </a>
         </div>
         <!--फोटो भन्दा माथि-->
@@ -197,6 +231,16 @@ to {opacity: 1}
         <!--मेन फोटो-->
         <img src="bindubnr.jpg" alt="Nature" class="responsive" width="600" height="400">
         <!--फोटो भन्दा तल-->
+        <!--おすすめ-->
+<div class="osusume" id="osusume">
+  <h3>おすすめメニュー</h3>
+  <div class="imgs">
+    <img src="m/osusume/osusume_01.jpg" alt="" class="responsive">
+    <img src="m/osusume/osusume_02.jpg" alt="" class="responsive">
+
+</div>
+
+</div>
         <div class="slideshow-container">
 
           <div class="mySlides fade">
@@ -232,23 +276,140 @@ to {opacity: 1}
             <img src="vfpl_w500h500.jpg" style="width:100%">
             <div class="text"></div>
           </div>
+          
           <div style="text-align:center">
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
+            <span class="dot1"></span> 
+            <span class="dot1"></span> 
+            <span class="dot1"></span> 
+            <span class="dot1"></span> 
+            <span class="dot1"></span> 
+            <span class="dot1"></span> 
+            <span class="dot1"></span>
+            <span class="dot1"></span> 
           </div>
           
           </div>
+          <script>
+            var slideIndex = 0;
+            showSlidesg();
+            
+            function showSlidesg() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot1");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlidesg, 5000); // Change image every 2 seconds
+            }
+            </script>
+
+
+
+<div class="coursevar" id="lunch">
+              <h3>ランチメニュー</h3>
+  <div class="lunch">
+    <img src="m/lunch/lunch_a3_01.jpg" alt="" class="responsive">
+    <img src="m/lunch/lunch_a3_02.jpg" alt="" class="responsive">
+    
+
+  </div>
+  
+
+
+</div>
+          
+          <div class="slideshow-container" id="dinner">
+            <h3>ディナーメニュー</h3>
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/201224_p11.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/p10.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/p09.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/p08.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/p07.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/p06.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/p05.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/p04.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/p03.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/p02.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            <div class="mySlides1 fade">
+              
+              <img src="m/dinner/p01.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            
           <script>
             var slideIndex = 0;
             showSlides();
             
             function showSlides() {
               var i;
-              var slides = document.getElementsByClassName("mySlides");
+              var slides = document.getElementsByClassName("mySlides1");
               var dots = document.getElementsByClassName("dot");
               for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";  
@@ -263,8 +424,36 @@ to {opacity: 1}
               setTimeout(showSlides, 5000); // Change image every 2 seconds
             }
             </script>
-        <!--おすすめ-->
+            </div>
+            <div class="coursevar">
+              
+              <div class="dinnermenu">
+                <img src="m/dinner/201224_p11.jpg" alt="" class="responsive">
+                <img src="m/dinner/p10.jpg" style="width:100%" class="responsive">
+                <img src="m/dinner/p09.jpg" style="width:100%" class="responsive">
+                <img src="m/dinner/p08.jpg" style="width:100%" class="responsive">
+                <img src="m/dinner/p07.jpg" style="width:100%" class="responsive">
+                <img src="m/dinner/p06.jpg" style="width:100%" class="responsive">
+                <img src="m/dinner/p05.jpg" style="width:100%" class="responsive">
+                <img src="m/dinner/p04.jpg" style="width:100%" class="responsive">
+                <img src="m/dinner/p03.jpg" style="width:100%" class="responsive">
+                <img src="m/dinner/p02.jpg" style="width:100%" class="responsive">
+                <img src="m/dinner/p01.jpg" style="width:100%" class="responsive">
 
+              </div>
+              <div class="kid" id="kids">
+                <h3>お子様セット</h3>
+                <img src="m/kids_menu/201223_a4_okosama.jpg" style="width:100%" class="responsive">
+              </div>
+              <div class="tabehoudai" id="tabehoudai">
+                <h3>食べ放題</h3>
+                <img src="m/tabenomi/201224_a4.jpg" style="width:100%" class="responsive">
+              </div>
+              
+
+
+            </div>
+        
 
 
 
@@ -273,7 +462,7 @@ to {opacity: 1}
           <div class="akusesu"><h1>アクセス</h1></div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.3462618779486!2d135.57753902336702!3d34.66761890503628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000df9515181ad9%3A0xeb2cd32026887f44!2z44OT44Oz44OJ44Kl5bCP6Ziq5bqX!5e0!3m2!1sja!2sjp!4v1612780621169!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <div class="zyohonaiyo">
-            <h2>Indian Restaurant BINDU</h2>
+            <h2>NAMASTE BINDU</h2>
           <h3>本格インド料理ビンドゥ小阪店</h3>
               <h3>〒577-0036 大阪府東大阪市御厨栄町１丁目７−１４ ハロー小阪ビル1階</h3>
               <h3>Phone: 0667882006</h3>
